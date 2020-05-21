@@ -24,7 +24,7 @@ This is useful to show loading, **typing** and pending user interactions.
       const [onChange, {
         isLoading,
         value,
-      }] = useLoadingDebounce()
+      }] = useDebounceLoader()
     
       return (
         <div>
@@ -56,7 +56,7 @@ The useDebounceLoader returns a callback to trigger the debounce and the current
 
 Call this function with the value you wish to debounce. 
 
-    const [onChange, debouncer] = useLoadingDebounce()
+    const [onChange, debouncer] = useDebounceLoader()
     
     useEffect(() => {
 	      onChange('First value)
@@ -88,7 +88,7 @@ You can also pass a range of options to customise the behaviour of the debouncer
 
 **Example**
 
-    const [onChange, debouncer] = useLoadingDebounce({
+    const [onChange, debouncer] = useDebounceLoader({
 	    debounceTime: 2000,
 	    initialValue: 100,
 	    onFinish,
@@ -112,7 +112,7 @@ Will fire when the debouncer has resolved. This is useful to trigger data fetche
         // Perform some request
     }
     
-    const [onChange, debouncer] = useLoadingDebounce({
+    const [onChange, debouncer] = useDebounceLoader({
     	onFinish: onFetchData,
     })
 
