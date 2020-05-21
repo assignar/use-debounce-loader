@@ -1,1 +1,7 @@
 src/
+test/
+tsconfig.json
+.github/
+.prettierrc.js
+jest.config.js
+.eslintrc.js
