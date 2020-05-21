@@ -1,14 +1,14 @@
 import 'react';
 import { act, renderHook } from '@testing-library/react-hooks';
 
-import { useLoadingDebounce, DEFAULT_DEBOUNCE_TIME_MS } from '../src/useLoadingDebounce';
+import { useDebounceLoader, DEFAULT_DEBOUNCE_TIME_MS } from '../src/useDebounceLoader';
 
-describe('useLoadingDebounce', () => {
+describe('useDebounceLoader', () => {
     jest.useFakeTimers();
 
     describe('default options', () => {
         it('shows loading state while value is being debounced', () => {
-            const { result } = renderHook(() => useLoadingDebounce<string>());
+            const { result } = renderHook(() => useDebounceLoader<string>());
 
             const newValue = 'Hello';
 
@@ -29,7 +29,7 @@ describe('useLoadingDebounce', () => {
         });
 
         it('it resolves loading state when value is unbounced', () => {
-            const { result } = renderHook(() => useLoadingDebounce<string>());
+            const { result } = renderHook(() => useDebounceLoader<string>());
 
             const newValue = 'Hello';
 
@@ -54,7 +54,7 @@ describe('useLoadingDebounce', () => {
             const DEBOUNCE_TIME_MS = 3000;
 
             const { result } = renderHook(() =>
-                useLoadingDebounce<string>({
+                useDebounceLoader<string>({
                     debounceTime: DEBOUNCE_TIME_MS,
                 }),
             );
@@ -83,7 +83,7 @@ describe('useLoadingDebounce', () => {
         it('it uses the initial value', () => {
             const initialValue = 'foo';
             const { result } = renderHook(() =>
-                useLoadingDebounce<string>({
+                useDebounceLoader<string>({
                     initialValue,
                 }),
             );
@@ -94,7 +94,7 @@ describe('useLoadingDebounce', () => {
         it('it fires debounce resolved callback', () => {
             const onFinish = jest.fn();
             const { result } = renderHook(() =>
-                useLoadingDebounce<string>({
+                useDebounceLoader<string>({
                     onFinish,
                 }),
             );

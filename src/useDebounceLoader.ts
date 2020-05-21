@@ -10,7 +10,7 @@ interface Options<T> {
 
 export const DEFAULT_DEBOUNCE_TIME_MS = 1000;
 
-export function useLoadingDebounce<T>(
+export function useDebounceLoader<T>(
     { debounceTime, initialValue, onFinish }: Options<T> = {
         debounceTime: DEFAULT_DEBOUNCE_TIME_MS,
     },
