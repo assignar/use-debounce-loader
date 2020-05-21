@@ -1,0 +1,46 @@
+{
+  "name": "use-debounce-loader",
+  "version": "0.0.1",
+  "description": "React hook that exposes the pending state of a debounced value",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "test": "jest",
+    "prepublish": "tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/assignar/use-debounce-loader.git"
+  },
+  "keywords": [
+    "react",
+    "hooks",
+    "debounce"
+  ],
+  "author": "adamhannigan81@gmail.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/assignar/use-debounce-loader/issues"
+  },
+  "homepage": "https://github.com/assignar/use-debounce-loader#readme",
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^2.34.0",
+    "@typescript-eslint/parser": "^2.34.0",
+    "@types/jest": "^25.2.3",
+    "@testing-library/react": "^10.0.4",
+    "@testing-library/react-hooks": "^3.2.1",
+    "eslint": "^7.0.0",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-plugin-prettier": "^3.1.3",
+    "eslint-plugin-react": "^7.20.0",
+    "jest": "^26.0.1",
+    "prettier": "^2.0.5",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-test-renderer": "^16.13.1",
+    "ts-jest": "^26.0.0",
+    "tsc": "^1.20150623.0",
+    "typescript": "^3.9.3",
+    "use-debounce": "^3.4.2"
+  }
+}
