@@ -15,6 +15,8 @@ This is useful to show loading, **typing** and pending user interactions.
 
 # Example
 
+https://codesandbox.io/s/frosty-antonelli-idx3l?file=/src/App.js:36-53
+
 **userInput.jsx**
 
     import React, { useState } from 'react';
