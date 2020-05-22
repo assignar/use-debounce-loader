@@ -1,6 +1,6 @@
 {
   "name": "use-debounce-loader",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "React hook that exposes the pending state of a debounced value",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
