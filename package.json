@@ -1,6 +1,6 @@
 {
   "name": "use-debounce-loader",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "React hook that exposes the pending state of a debounced value",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -23,6 +23,11 @@
     "url": "https://github.com/assignar/use-debounce-loader/issues"
   },
   "homepage": "https://github.com/assignar/use-debounce-loader#readme",
+  "dependencies": {
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "use-debounce": "^3.4.2"
+  },
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^2.34.0",
     "@typescript-eslint/parser": "^2.34.0",
@@ -35,12 +40,9 @@
     "eslint-plugin-react": "^7.20.0",
     "jest": "^26.0.1",
     "prettier": "^2.0.5",
-    "react": "^16.13.1",
-    "react-dom": "^16.13.1",
     "react-test-renderer": "^16.13.1",
     "ts-jest": "^26.0.0",
     "tsc": "^1.20150623.0",
-    "typescript": "^3.9.3",
-    "use-debounce": "^3.4.2"
+    "typescript": "^3.9.3"
   }
 }

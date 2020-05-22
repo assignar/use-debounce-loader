@@ -49,7 +49,7 @@ describe('useDebounceLoader', () => {
         });
     });
 
-    describe.only('custom options', () => {
+    describe('custom options', () => {
         it('debounces for user specified time', () => {
             const DEBOUNCE_TIME_MS = 3000;
 
